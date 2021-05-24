@@ -31,9 +31,9 @@ insert into sede values
 	(5, 1994,'Estados Unidos','América'),
 	(6, 1998,'França','Europa'),
 	(7, 2002,'Japão', 'Ásia'),
-	(8,	2006,'Alemanha', 'Europa'),
-	(9,	2010,'África do Sul', 'África'),
-	(10,	2014,'Brasil','América');
+	(8, 2006,'Alemanha', 'Europa'),
+	(9, 2010,'África do Sul', 'África'),
+	(10, 2014,'Brasil','América');
 
 INSERT INTO VENCEDOR VALUES 
 	(1,	1978,'Argentina','América'),
@@ -66,5 +66,5 @@ INSERT INTO VENCEDOR VALUES
 	FROM VENCEDOR JOIN SEDE 
 	ON VENCEDOR.CODIGO = SEDE.CODIGO 
 	WHERE SEDE.CONTINENTE_SEDE NOT IN
-    ('Ásia','África');
+    	('Ásia','África');
     
